@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>Histori Presensi</ion-title>
+    <ion-buttons>
+     
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content-bg">
+  <div class="background-container">
+    <div class="background-animation">
+
+  <table class="tb">
+    <thead>
+      <tr class="t1">
+        <th scope="col">Kd</th>
+        <th scope="col">Tanggal</th>
+        <th scope="col">Nama</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of allData">
+        <th scope="row">{{data.kd_presensi}}</th>
+        <td>{{data.tanggal}}</td>
+        <td>{{data.nama_siswa}}</td>
+        <td>{{data.status_kehadiran}}</td>
+      </tr>
+      <!-- Loop variabel from TS for Get Data -->
+    </tbody>
+  </table>
+    </div>
+

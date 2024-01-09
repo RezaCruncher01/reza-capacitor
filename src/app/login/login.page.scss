@@ -1,0 +1,195 @@
+.container-login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.container-login ion-grid {
+    padding: 20px;
+}
+
+.container-login h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.icon-login {
+    color: #327af9;
+    margin-right: 10px;
+}
+
+ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-end: 10px;
+    --inner-border-width: 0;
+    --min-height: 0;
+    --background: #f8f8f8;
+    --border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+ion-input {
+    --padding-start: 5px;
+    --placeholder-color: #666;
+    --placeholder-font-style: italic;
+    --placeholder-opacity: 0.8;
+    --color: #333;
+}
+
+ion-button {
+    --background: #327af9;
+    --background-activated: #2868c7;
+    --background-hover: #2868c7;
+    --border-radius: 4px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+ion-button[disabled] {
+    --opacity: 0.4;
+}
+
+  ion-text[color="danger"] {
+    
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+  ion-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Contoh font */
+    font-size: 20px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    font-weight: bold; /* Ketebalan font */
+    text-transform: uppercase; /* Membuat teks menjadi huruf besar */
+    letter-spacing: 1.2px; /* Jarak antar huruf */
+    text-shadow: 1px 1px 2px rgba(239, 131, 7, 0.1); /* Efek bayangan pada teks */
+  }
+  .centered-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  /* Styling for ion-row */
+ion-row {
+  margin-bottom: 15px; /* Menambahkan margin di bawah ion-row */
+}
+
+/* Styling for ion-col */
+ion-col {
+  text-align: center; /* Pusatkan teks di dalam ion-col */
+}
+
+/* Styling for ion-list */
+ion-list {
+  background-color: #f0f0f0; /* Warna latar belakang ion-list */
+  border-radius: 8px; /* Sudut bulat pada ion-list */
+  padding: 15px; /* Ruang dalam ion-list */
+}
+
+/* Styling for ion-item */
+ion-item {
+  border-bottom: 1px solid #ccc; /* Garis bawah pada ion-item */
+}
+
+/* Styling for ion-icon in ion-item */
+ion-item ion-icon {
+  font-size: 20px; /* Ukuran ikon */
+  margin-right: 10px; /* Margin di sebelah kanan ikon */
+}
+
+/* Styling for ion-input in ion-item */
+ion-item ion-input {
+  border: none; /* Hapus border pada ion-input */
+  box-shadow: none; /* Hapus shadow pada ion-input */
+  font-size: 16px; /* Ukuran teks pada ion-input */
+  padding: 5px; /* Ruang dalam ion-input */
+  border-radius: 5px; /* Sudut bulat pada ion-input */
+}
+
+/* Styling for placeholder in ion-input */
+ion-item ion-input::placeholder {
+  color: #f79393; /* Warna teks placeholder */
+}
+
+/* Hover effect on ion-item */
+ion-item:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat dihover */
+}
+
+  

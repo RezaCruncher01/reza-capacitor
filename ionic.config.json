@@ -1,0 +1,7 @@
+{
+  "name": "rezabuildproject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

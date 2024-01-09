@@ -1,0 +1,16 @@
+
+/* Mengatur warna latar belakang untuk tab bar */
+ion-tab-bar {
+    --background: #acf486; /* Ganti dengan warna yang Anda inginkan */
+  }
+  
+  /* Mengatur warna untuk tab button yang tidak aktif */
+  ion-tab-button {
+    --color: rgba(105, 48, 5, 0.6); /* Warna untuk icon dan teks saat tidak aktif */
+  }
+  
+  /* Mengatur warna untuk tab button saat aktif */
+  ion-tab-button[aria-selected="true"] {
+    --color: #4257f6; /* Warna untuk icon dan teks saat aktif */
+  }
+  

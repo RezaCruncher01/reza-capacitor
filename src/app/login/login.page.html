@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title class="centered-title">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section>
+    <div class='air air1'></div>
+    <div class='air air2'></div>
+    <div class='air air3'></div>
+    <div class='air air4'></div>
+ 
+  
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+  <div class="container-login">
+    
+    <ion-grid>
+        <!-- ... konten lain ... -->
+        <ion-row>
+            <ion-col>
+                <ion-list>
+
+                    <ion-item>
+                        <ion-icon name="person" class="icon-login"></ion-icon>
+                        <ion-input [(ngModel)]="username" name="user" type="text" required placeholder="Username"></ion-input>
+                    </ion-item>
+                    <br />
+                    <ion-item>
+                        <ion-icon name="lock-closed-outline" class="icon-login"></ion-icon>
+                        <ion-input [(ngModel)]="password" name="password" type="password" required placeholder="Password"></ion-input>
+                    </ion-item>
+
+                </ion-list>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button type="submit" fill="solid" expand="full" (click)="login()">
+                    Login
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <!-- ... konten lain ... -->
+    </ion-grid>
+    <ion-row *ngIf="showError">
+      <ion-col>
+          <ion-text color="danger">
+              {{ errorMessage }}
+          </ion-text>
+      </ion-col>
+  </ion-row>
+</div>
+</section>
+
+</ion-content>

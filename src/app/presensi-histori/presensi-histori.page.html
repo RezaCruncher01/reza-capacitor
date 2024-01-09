@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="centered-title">Input Histori Presensi</ion-title>
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Tanggal</ion-label>
+    <ion-datetime displayFormat="DD MMM YYYY" [(ngModel)]="tanggal"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Nama Siswa</ion-label>
+    <ion-input [(ngModel)]="namasiswa"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Status</ion-label>
+    <ion-select [(ngModel)]="statuskehadiran">
+      <ion-select-option value="hadir">Hadir</ion-select-option>
+      <ion-select-option value="izin">Izin</ion-select-option>
+      <ion-select-option value="sakit">Sakit</ion-select-option>
+      <ion-select-option value="absen">Absen</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" (click)="submitPresensi()">Submit Presensi</ion-button>
+</ion-content>
